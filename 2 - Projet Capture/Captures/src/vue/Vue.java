@@ -15,12 +15,12 @@ public class Vue extends Scene{
 	
 	public Vue(String fxml)
 	{
-		super(parser(fxml, null),1300,800);
+		super(parser(fxml, null),1294,743);
 		this.controleur = null;
 	}
 	public Vue(String fxml, Controleur controleur)
 	{
-		super(parser(fxml, controleur),1300,800);
+		super(parser(fxml, controleur),1294,743);
 		this.controleur = controleur;
 	}
 
@@ -47,10 +47,10 @@ public class Vue extends Scene{
 		{
 	        @Override public void handle(ActionEvent e) 
 	        {
-	        	Logger.logMsg(Logger.INFO, "Bouton Retour active");
+	        	Logger.logMsg(Logger.INFO, "Bouton Retour activé");
 	        	controleur.notifierEvenement(ActionNavigation.RETOUR);
 	        }
 	    });*/
-	}
 	}		
 	
+}

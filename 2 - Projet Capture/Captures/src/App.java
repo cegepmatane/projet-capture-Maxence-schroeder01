@@ -1,15 +1,10 @@
-
-import architecture.Fenetre;
-import donnee.MeteoDAO;
+import donnee.TemperatureDAO;
+import vue.Fenetre;
 
 public class App {
 
 	public static void main(String[] parametres) {
-		
-		MeteoDAO etudiantDAO = new MeteoDAO();
-		etudiantDAO.listerExoplanetes();
-		
-		Fenetre.launch(Fenetre.class, parametres);	
+		Fenetre.launch(Fenetre.class, parametres);
 	}
 
 }

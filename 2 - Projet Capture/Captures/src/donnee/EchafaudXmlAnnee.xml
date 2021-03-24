@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<humidite>
+	<bureau>
+		<annee>
+			<mois>
+				<valeur>1</valeur>
+				<min>12</min>
+				<moyenne>84</moyenne>
+				<max>84</max>
+</mois>
+			<mois>
+				<valeur>2</valeur>
+				<min>12</min>
+				<moyenne>84</moyenne>
+				<max>84</max>
+</mois>
+			<mois>
+				<valeur>3</valeur>
+				<min>1</min>
+				<moyenne>84</moyenne>
+				<max>84</max>
+</mois>
+			<mois>
+				<valeur>4</valeur>
+				<min>12</min>
+				<moyenne>84</moyenne>
+				<max>84</max>
+</mois>
+			<mois>
+				<valeur>5</valeur>
+				<min>12</min>
+				<moyenne>84</moyenne>
+				<max>84</max>
+</mois>
+			<mois>
+				<valeur>6</valeur>
+				<min>12</min>
+				<moyenne>84</moyenne>
+				<max>84</max>
+</mois>
+			<mois>
+				<valeur>7</valeur>
+				<min>12</min>
+				<moyenne>84</moyenne>
+				<max>84</max>
+</mois>
+			<mois>
+				<valeur>8</valeur>
+				<min>12</min>
+				<moyenne>84</moyenne>
+				<max>84</max>
+</mois>
+			<mois>
+				<valeur>9</valeur>
+				<min>12</min>
+				<moyenne>84</moyenne>
+				<max>84</max>
+</mois>
+			<mois>
+				<valeur>10</valeur>
+				<min>12</min>
+				<moyenne>84</moyenne>
+				<max>84</max>
+</mois>
+			<mois>
+				<valeur>11</valeur>
+				<min>12</min>
+				<moyenne>84</moyenne>
+				<max>84</max>
+</mois>
+			<mois>
+				<valeur>12</valeur>
+				<min>12</min>
+				<moyenne>84</moyenne>
+				<max>84</max>
+</mois>
+		</annee>
+	</bureau>
+</humidite>

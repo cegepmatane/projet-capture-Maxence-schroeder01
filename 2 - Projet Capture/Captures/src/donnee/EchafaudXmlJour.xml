@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<humidite>
+	<bureau>
+		<jour>
+			<min>12</min>
+		<moyenne>84</moyenne>	
+		<max>8%</max>	
+			<heure>
+				<valeur>1</valeur>
+				<min>12</min>
+			<moyenne>84</moyenne>	
+			<max>84</max>	
+</heure>
+<heure>
+				<valeur>2</valeur>
+				<min>12</min>
+			<moyenne>84</moyenne>	
+			<max>84</max>	
+</heure>	
+<heure>
+				<valeur>3</valeur>
+				<min>12</min>
+			<moyenne>84</moyenne>	
+			<max>84</max>	
+</heure>
+<heure>
+				<valeur>4</valeur>
+				<min>12</min>
+			<moyenne>84</moyenne>	
+			<max>84</max>	
+</heure>
+<heure>
+				<valeur>5</valeur>
+				<min>12</min>
+			<moyenne>84</moyenne>	
+			<max>84</max>	
+</heure>	
+		</jour>
+	</bureau>
+</humidite>

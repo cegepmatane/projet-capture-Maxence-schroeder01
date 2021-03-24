@@ -1,13 +1,13 @@
-package architecture;
+package vue;
 
 import java.io.IOException;
 
 import com.sun.media.jfxmedia.logging.Logger;
 
+import controleur.Controleur;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import vue.VueCaptures;
 
 public class Vue extends Scene{
 	protected static FXMLLoader parseur = null;
@@ -15,12 +15,12 @@ public class Vue extends Scene{
 	
 	public Vue(String fxml)
 	{
-		super(parser(fxml, null),1294,743);
+		super(parser(fxml, null),1300,800);
 		this.controleur = null;
 	}
 	public Vue(String fxml, Controleur controleur)
 	{
-		super(parser(fxml, controleur),1294,743);
+		super(parser(fxml, controleur),1300,800);
 		this.controleur = controleur;
 	}
 
@@ -47,10 +47,10 @@ public class Vue extends Scene{
 		{
 	        @Override public void handle(ActionEvent e) 
 	        {
-	        	Logger.logMsg(Logger.INFO, "Bouton Retour activ��");
+	        	Logger.logMsg(Logger.INFO, "Bouton Retour active");
 	        	controleur.notifierEvenement(ActionNavigation.RETOUR);
 	        }
 	    });*/
+	}
 	}		
 	
-}

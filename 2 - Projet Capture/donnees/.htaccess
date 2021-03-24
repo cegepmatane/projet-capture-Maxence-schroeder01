@@ -1,0 +1,9 @@
+RewriteEngine On
+
+ErrorDocument 404 http://devoircapture.ddns.net/404page.php
+
+RewriteRule ^Temperature/bureau/jour$ jour.php [L]
+
+RewriteRule ^Temperature/bureau/mois$ mois.php [L]
+
+RewriteRule ^Temperature/bureau/annee$ annee.php [L]

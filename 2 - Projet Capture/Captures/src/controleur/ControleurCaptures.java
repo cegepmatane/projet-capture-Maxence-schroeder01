@@ -28,29 +28,29 @@ public class ControleurCaptures extends Controleur{
 	{
 		Navigateur.getInstance().afficherVue(VueJournee.getInstance());
 			
-		TemperatureDAO HDAO = new TemperatureDAO();
-		HDAO.recupTemperature("jour");
-		List<TemperatureJour> HJour = HDAO.DecoderXMLJour();
-		VueJournee.getInstance().afficherJour(HJour);	
+		TemperatureDAO TDAO = new TemperatureDAO();
+		TDAO.recupTemperature("jour");
+		List<TemperatureJour> TJour = TDAO.DecoderXMLJour();
+		VueJournee.getInstance().afficherJour(TJour);	
 	}
 	
 	public void clicMois()
 	{
 		Navigateur.getInstance().afficherVue(VueMois.getInstance());
 		
-		TemperatureDAO HDAO = new TemperatureDAO();
-		HDAO.recupTemperature("mois");
-		List<TemperatureMois> HMois = HDAO.DecoderXMLMois();
-		VueMois.getInstance().afficherMois(HMois);	
+		TemperatureDAO TDAO = new TemperatureDAO();
+		TDAO.recupTemperature("mois");
+		List<TemperatureMois> TMois = TDAO.DecoderXMLMois();
+		VueMois.getInstance().afficherMois(TMois);	
 	}
 	
 	public void clicAnnee()
 	{
 		Navigateur.getInstance().afficherVue(VueAnnee.getInstance());
 		
-		TemperatureDAO HDAO = new TemperatureDAO();
-		HDAO.recupTemperature("annee");
-		List<TemperatureAnnee> HAnnee = HDAO.DecoderXMLAnnee();
-		VueAnnee.getInstance().afficherAnnee(HAnnee);
+		TemperatureDAO TDAO = new TemperatureDAO();
+		TDAO.recupTemperature("annee");
+		List<TemperatureAnnee> TAnnee = TDAO.DecoderXMLAnnee();
+		VueAnnee.getInstance().afficherAnnee(TAnnee);
 	}
 }

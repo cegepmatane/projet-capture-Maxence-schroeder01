@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 
-<humidite>
+<Temperature>
 	<bureau>
 		<annee>
 			<mois>
@@ -78,4 +78,4 @@
 </mois>
 		</annee>
 	</bureau>
-</humidite>
+</Temperature>

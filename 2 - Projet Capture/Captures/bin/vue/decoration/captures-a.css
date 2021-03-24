@@ -1,0 +1,70 @@
+#fenetre
+{
+    -fx-background-color:#fff;
+}
+#entete
+{
+    -fx-background-color: #3e3738;
+}
+#boite-menu
+{
+    -fx-background-color:#333;
+}
+#boite-menu Label
+{
+    -fx-text-fill:white;
+}
+#boite-menu Button
+{
+    -fx-background-color:#333;
+}
+#boite-menu Button:hover
+{
+    -fx-background-color:#555;
+}
+Button:pressed
+{
+    -fx-background-color: #9777A7;   
+}
+TextField, ComboBox
+{
+    -fx-background-color:#333;
+}
+Pane.titre
+{
+    -fx-background-color:#333;
+}
+
+.mesure.apercu.jour
+{
+    -fx-background-color:orange;
+}
+.mesure.graphique.jour
+{
+    -fx-background-color:red;
+}
+.mesure.apercu.mois
+{
+    -fx-background-color: brown;
+}
+.mesure.graphique.mois
+{
+    -fx-background-color: blue;
+}
+.mesure.apercu.annee
+{
+    -fx-background-color: #333;
+}
+.mesure.graphique.annee
+{
+    -fx-background-color: green;
+}
+#mesures .mesure.apercu Label
+{
+    -fx-text-fill:white;    
+}
+#mesures
+{
+    -fx-background-color: #EDF2F6;
+}
+

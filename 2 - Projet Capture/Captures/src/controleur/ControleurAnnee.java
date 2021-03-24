@@ -31,9 +31,9 @@ public class ControleurAnnee extends Controleur{
 	{
 		Navigateur.getInstance().afficherVue(VueJournee.getInstance());
 		
-		TemperatureDAO HDAO = new TemperatureDAO();
-		HDAO.recupTemperature("jour");
-		List<TemperatureJour> HJour = HDAO.DecoderXMLJour();
+		TemperatureDAO TDAO = new TemperatureDAO();
+		TDAO.recupTemperature("jour");
+		List<TemperatureJour> HJour = TDAO.DecoderXMLJour();
 		VueJournee.getInstance().afficherJour(HJour);	
 	}
 	
@@ -41,9 +41,9 @@ public class ControleurAnnee extends Controleur{
 	{
 		Navigateur.getInstance().afficherVue(VueMois.getInstance());
 		
-		TemperatureDAO HDAO = new TemperatureDAO();
-		HDAO.recupTemperature("mois");
-		List<TemperatureMois> HMois = HDAO.DecoderXMLMois();
-		VueMois.getInstance().afficherMois(HMois);
+		TemperatureDAO TDAO = new TemperatureDAO();
+		TDAO.recupTemperature("mois");
+		List<TemperatureMois> TMois = TDAO.DecoderXMLMois();
+		VueMois.getInstance().afficherMois(TMois);
 	}	
 }

@@ -1,15 +1,10 @@
-<?php
-    error_reporting(E_ALL);
-    ini_set('display_errors', 1);
+<?php   
 
-    $usager = 'root';
-    $motdepasse = 'password123';
-    $hote = 'localhost';
-    $base = 'meteo';
+    header ("Content-Type:text/xml");
+    echo '<?xml version="1.0" encoding="UTF-8"?>';
 
-    $dsn = 'pgsql:dbname='.$base.';host=' . $hote;
-    $basededonnees = new PDO($dsn, $usager, $motdepasse);
-
+    include "connection.php";
+    
     //$SQL_LISTE_TEMPERATURE = "SELECT * FROM temperature";
     $SQL_LISTE_Temperature = "SELECT date_part('day',moment) as jour, MAX(tauxtemperature) as maximum, MIN(tauxtemperature) as minimum,
     AVG(tauxtemperature) as moyenne FROM temperature WHERE date_part('month', moment) = date_part('month', moment) 
@@ -24,9 +19,6 @@
     $requete2->execute();
     $moyennes = $requete2->fetchAll(PDO::FETCH_OBJ);
     ?><?php
-
-    header ("Content-Type:text/xml");
-    echo '<?xml version="1.0" encoding="UTF-8"?>';
 
     //print_r($moyennes);
     foreach ($moyennes as $moyenne) 

@@ -1,13 +1,9 @@
 RewriteEngine On
 
-ErrorDocument 404 http://51.161.33.187/sdd/404page.php
+ErrorDocument 404 http://devoircapture.ddns.net/404page.php
 
-RewriteRule ^sdd/jour$ jour.php [L]
+RewriteRule ^Temperature/bureau/jour$ jour.php [L]
 
-RewriteRule ^sdd/mois$ mois.php [L]
+RewriteRule ^Temperature/bureau/mois$ mois.php [L]
 
-RewriteRule ^sdd/annee$ annee.php [L]
-
-RewriteRule ^sdd/annee$ alerte.php [L]
-
-RewriteRule ^sdd/annee$ mobile.php [L]
+RewriteRule ^Temperature/bureau/annee$ annee.php [L]

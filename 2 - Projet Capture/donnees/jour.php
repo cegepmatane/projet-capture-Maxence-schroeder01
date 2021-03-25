@@ -1,15 +1,9 @@
 <?php
-    error_reporting(E_ALL);
-    ini_set('display_errors', 1);
 
-    $usager = 'root';
-    $motdepasse = 'password123';
-    $hote = 'localhost';
-    $base = 'meteo';
+    header ("Content-Type:text/xml");
+    echo '<?xml version="1.0" encoding="UTF-8"?>';
 
-    $dsn = 'pgsql:dbname='.$base.';host=' . $hote;
-    $basededonnees = new PDO($dsn, $usager, $motdepasse);
-
+    include "connection.php";
     //$SQL_LISTE_TEMPERATURE = "SELECT * FROM temperature";
     $SQL_LISTE_TEMPERATURE = "SELECT date_part('hour',moment) as heures, MAX(tauxtemperature) as maximum, MIN(tauxtemperature) as minimum,
     AVG(tauxtemperature) as moyenne FROM temperature WHERE date_part('day', moment) = date_part('day', moment) GROUP BY date_part('hour',moment)";
